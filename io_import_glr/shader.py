@@ -114,7 +114,6 @@ class N64Shader:
         self.make_output()
 
         # Set material-level properties
-        mat.shadow_method = 'NONE'
         mat.use_backface_culling = cull_backfacing
         if self.use_alpha and show_alpha:
             mat.blend_method = 'BLEND' if is_translucent else 'HASHED'
